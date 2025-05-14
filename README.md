@@ -1,3 +1,4 @@
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
@@ -56,6 +57,8 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
----
-
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+# gsideadsea-collaborations-cms
+Headless CMS for managing research collaborations, built with Strapi. Supports partners, projects, and logistics.
+
