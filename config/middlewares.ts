@@ -1,5 +1,3 @@
-import { Strapi } from '@strapi/strapi';
-
 const middleware = [
   {
     name: 'strapi::logger',
@@ -18,8 +16,7 @@ const middleware = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
-      origin: ['*'], // אפשר להחליף עם כתובת ספציפית אם צריך
+      origin: ['*'], // החלף אם יש צורך בכתובת ספציפית
     },
   },
   {
