@@ -23,7 +23,6 @@ const middleware = [
         'https://dead-sea-obse-git-cc1aa8-lensky-efrat-miryams-projects-897a077f.vercel.app',
         'https://dead-sea-observatory-54xzxv63e.vercel.app',
       ],      
-      headers: '*',
       methods: ['GET'],
       credentials: true,
     },
