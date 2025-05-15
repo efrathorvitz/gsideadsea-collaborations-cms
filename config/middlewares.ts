@@ -21,7 +21,7 @@ const middleware = [
         'https://dead-sea-observatory.vercel.app',
       ],
       headers: '*',
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+      methods: ['GET'],
       credentials: true,
     },
   },
