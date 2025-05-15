@@ -16,7 +16,13 @@ const middleware = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'], // החלף אם יש צורך בכתובת ספציפית
+      origin: [
+        'http://localhost:5173',
+        'https://dead-sea-observatory.vercel.app',
+      ],
+      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+      credentials: true,
     },
   },
   {
