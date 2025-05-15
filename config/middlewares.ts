@@ -19,8 +19,9 @@ const middleware = [
       origin: [
         'http://localhost:5173',
         'https://dead-sea-observatory.vercel.app',
+        'https://dead-sea-observatory-lensky-efrat-miryams-projects-897a077f.vercel.app',
         'https://dead-sea-obse-git-cc1aa8-lensky-efrat-miryams-projects-897a077f.vercel.app',
-        'https://dead-sea-observatory-54xzxv63e.vercel.app',
+        'https://dead-sea-observatory-54xzxv63e.vercel.app/',
       ],      
       headers: '*',
       methods: ['GET'],
