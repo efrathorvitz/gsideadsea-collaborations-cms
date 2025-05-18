@@ -377,6 +377,7 @@ export interface ApiCollaborationCollaboration
   extends Struct.CollectionTypeSchema {
   collectionName: 'collaborations';
   info: {
+    description: '';
     displayName: 'Collaborations';
     pluralName: 'collaborations';
     singularName: 'collaboration';
@@ -389,6 +390,7 @@ export interface ApiCollaborationCollaboration
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Blocks;
+    links: Schema.Attribute.Component<'external-links.external-links', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -403,7 +405,6 @@ export interface ApiCollaborationCollaboration
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    website: Schema.Attribute.String;
   };
 }
 

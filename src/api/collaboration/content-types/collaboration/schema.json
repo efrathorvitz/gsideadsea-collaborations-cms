@@ -4,7 +4,8 @@
   "info": {
     "singularName": "collaboration",
     "pluralName": "collaborations",
-    "displayName": "Collaborations"
+    "displayName": "Collaborations",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,15 +20,17 @@
     "logo": {
       "type": "string"
     },
-    "website": {
-      "type": "string"
-    },
     "order": {
       "type": "integer"
     },
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "external-links.external-links"
     }
   }
 }
