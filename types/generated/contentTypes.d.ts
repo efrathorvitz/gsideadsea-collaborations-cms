@@ -443,6 +443,7 @@ export interface ApiContact1Contact1 extends Struct.SingleTypeSchema {
 export interface ApiFacilitieFacilitie extends Struct.CollectionTypeSchema {
   collectionName: 'facilities';
   info: {
+    description: '';
     displayName: 'Facilities';
     pluralName: 'facilities';
     singularName: 'facilitie';
@@ -455,7 +456,10 @@ export interface ApiFacilitieFacilitie extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Blocks;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
