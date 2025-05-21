@@ -46,6 +46,9 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }

@@ -517,6 +517,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
 export interface ApiImageImage extends Struct.CollectionTypeSchema {
   collectionName: 'gallery';
   info: {
+    description: '';
     displayName: 'Gallery';
     pluralName: 'gallery';
     singularName: 'image';
@@ -542,6 +543,7 @@ export interface ApiImageImage extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    videoUrl: Schema.Attribute.String;
   };
 }
 
@@ -602,6 +604,7 @@ export interface ApiPersonPerson extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
     photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     position: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
