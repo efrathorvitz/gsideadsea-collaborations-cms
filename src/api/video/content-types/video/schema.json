@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "Video"
+    "displayName": "Video",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,27 @@
     },
     "order": {
       "type": "integer"
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -690,6 +690,7 @@ export interface ApiResearchResearch extends Struct.CollectionTypeSchema {
 export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
   collectionName: 'videos';
   info: {
+    description: '';
     displayName: 'Video';
     pluralName: 'videos';
     singularName: 'video';
@@ -710,6 +711,11 @@ export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    videos: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     videoUrl: Schema.Attribute.String;
   };
 }
